@@ -220,7 +220,7 @@
     pos = e.key === code[pos] || e.key.toLowerCase() === code[pos] ? pos + 1 : (e.key === code[0] ? 1 : 0);
     if (pos === code.length) { pos = 0; flip(); }
   });
-  // phones: tap the big "Hi, I'm Ace" five times
+  // phones: tap the big "Hi, I'm Bryan" five times
   $(".hero h1").addEventListener("click", () => {
     clearTimeout(tapT); tapT = setTimeout(() => (taps = 0), 1200);
     if (++taps === 5) { taps = 0; flip(); }

@@ -10,8 +10,7 @@
 
 const SITE = {
   name: "Bryan Huynh",
-  nickname: "Ace",
-  email: "bryanhuynh1276@gmail.com",
+    email: "bryanhuynh1276@gmail.com",
   github: "https://github.com/bryanhuynh11",
   linkedin: "https://www.linkedin.com/in/bhuynh11",
   resumeUrl: "", // drop resume.pdf in the repo and set this to "resume.pdf" to show the Resume button

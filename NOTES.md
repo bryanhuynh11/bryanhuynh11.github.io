@@ -50,3 +50,9 @@ Running log of what I asked the chat AI for and what changed. Newest entries at 
 2. Set `status: "shipped"`, fill `title`, `link`, `reflection`, optional `tags`.
 3. `git commit -am "Artifact N card" && git push` — Pages redeploys in about a minute.
 4. Add a dated entry to this log.
+
+---
+
+## 2026-10-11 — Session 2
+- **Asked:** use my name, Bryan, on the site instead of Ace.
+- **Changed:** hero now says "Hi, I'm Bryan"; page title, link-preview text, About intro, footer, README, and `SITE.name` in `content.js` all say Bryan Huynh. The Ace-local project keeps its name.

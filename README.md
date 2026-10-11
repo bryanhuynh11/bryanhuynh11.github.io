@@ -1,6 +1,6 @@
 # bryanhuynh11.github.io
 
-Personal portfolio of Bryan "Ace" Huynh — CS @ UW Tacoma, building AI/ML and quant tools for financial markets.
+Personal portfolio of Bryan Huynh — CS @ UW Tacoma, building AI/ML and quant tools for financial markets.
 
 Live: https://bryanhuynh11.github.io
 
