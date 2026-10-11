@@ -2,7 +2,7 @@
 
 Personal portfolio of Bryan Huynh — CS @ UW Tacoma, building AI/ML and quant tools for financial markets.
 
-Live: https://bryanhuynh11.github.io
+Live: https://bryanhuynh11.github.io/?v=2
 
 - `index.html` – page structure
 - `styles.css` – design
