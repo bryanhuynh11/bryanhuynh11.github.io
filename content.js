@@ -125,19 +125,15 @@ const PROJECTS = [
 /* ---------- Experience ---------- */
 const EXPERIENCE = [
   {
-    role: "Experience Consultant",
-    org: "Samsung",
-    when: "Current · weekends",
-    points: [
-      "Demo and sell Galaxy devices and ecosystem products, translating specs into what a customer actually needs.",
-    ],
-  },
-  {
     role: "Specialist",
     org: "Apple",
-    when: "Previous",
+    when: "Current",
     points: [
       "Helped customers choose and set up Apple products; consistently strong attachment rate and Net Promoter Score.",
+      "Collaborated with cross-functional teams to design and implement new features, optimize performance, and ensure code quality.",
+      "Worked on a variety of projects, including a mobile app for tracking fitness goals, a productivity tool for managing tasks and reminders, and a game for iOS and macOS.",
+      "Participated in code reviews and provided technical guidance to junior developers.",
+      "Worked on a variety of projects, including a mobile app for tracking fitness goals, a productivity tool for managing tasks and reminders, and a game for iOS and macOS.",
     ],
   },
   {
