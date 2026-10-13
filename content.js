@@ -81,6 +81,14 @@ const ARTIFACTS = [
 /* ---------- Projects (filter tags: finance, ai, web, data) ---------- */
 const PROJECTS = [
   {
+    title: "ACE PO3",
+    badge: "Open source",
+    cats: ["finance"],
+    desc: "An ICT-style signal engine (Power of 3, STDV, FVG/iFVG/OB, MMXM) for NQ futures, built twice — Python for research, C++ for production speed — with an automated parity test proving both engines produce identical trades. Backtested on 60 days of 5-minute NQ data (33 trades, +2.2R) with an interactive TradingView-style replay of every signal.",
+    stack: ["Python", "C++", "pybind11", "CMake", "pandas"],
+    links: [{ label: "GitHub", href: "https://github.com/bryanhuynh11/ace-po3" }],
+  },
+  {
     title: "Ace-local",
     badge: "In progress",
     cats: ["finance", "ai"],
