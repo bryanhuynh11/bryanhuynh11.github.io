@@ -131,11 +131,12 @@
   /* ---------------- artifacts ---------------- */
   const grid = $("#artifactGrid");
   ARTIFACTS.forEach((a, idx) => {
-    const shipped = a.status === "shipped";
+    const progress = a.status === "progress";
+    const shipped = a.status === "shipped" || progress; // in-progress cards show a reflection like shipped ones
     const card = el("article", `artifact glass ${shipped ? "is-shipped" : "is-idea"} ${idx === 0 ? "feature" : ""}`);
     card.id = `artifact-${a.n}`;
     const top = `<div class="artifact-top"><span class="artifact-n">Artifact ${a.n} · ${esc(a.theme)}</span>
-      <span class="status ${shipped ? "shipped" : "idea"}">${shipped ? "▲ Shipped" : "◇ Idea"}</span></div>`;
+      <span class="status ${progress ? "progress" : shipped ? "shipped" : "idea"}">${progress ? "◐ In progress" : shipped ? "▲ Shipped" : "◇ Idea"}</span></div>`;
     const link = a.link ? `<a class="link-btn" href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.linkLabel || "Open")} ${ICONS.arrow}</a>` : "";
     const tags = a.tags ? `<div class="chips small">${a.tags.map((t) => `<span class="chip">${esc(t)}</span>`).join("")}</div>` : "";
     if (shipped) {

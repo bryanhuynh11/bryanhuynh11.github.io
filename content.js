@@ -59,12 +59,11 @@ const ARTIFACTS = [
   {
     n: 4,
     theme: "For Someone Else",
-    status: "idea",
-    title: "Little Saigon storefronts",
-    ideas: [
-      "A bilingual (English / Vietnamese) site builder for small businesses in Seattle's Little Saigon: menu, hours, photos, and a map, editable by the owner from a phone.",
-      "Grows out of Project LS, the platform I co-founded.",
-    ],
+    status: "progress", // "shipped", "progress", or "idea"
+    title: "Econ Impact Tracker",
+    reflection:
+      "I didn't find a partner this week, so I'm building this one on my own for now. I brainstormed with Claude through a Black Friday deal tracker, a few stock watchlist ideas, and a Vietnamese-language watchlist before picking an economic calendar impact tracker. It shows how NQ, ES, QQQ, and SPY moved after every CPI, jobs report, and Fed decision, so I can prep before the next one. I asked for Python and C++. Claude split the work so Python pulls release dates and prices, C++ measures the moves, and a plain web dashboard shows the patterns. The biggest snag was that the AI's environment couldn't reach Yahoo or FRED, so it built a sample-data generator and tested everything offline before I run the real fetch on my Mac. The big lesson was to verify the AI's work. When one C++ test failed, the test was what was wrong, not the engine, and a separate check on the outputs is what proved it. Next is getting a FRED key, loading real data, and showing it to another trader.",
+    tags: ["Python", "C++", "JavaScript", "FRED API", "yfinance"],
   },
   {
     n: 5,
@@ -141,7 +140,6 @@ const EXPERIENCE = [
       "Collaborated with cross-functional teams to design and implement new features, optimize performance, and ensure code quality.",
       "Worked on a variety of projects, including a mobile app for tracking fitness goals, a productivity tool for managing tasks and reminders, and a game for iOS and macOS.",
       "Participated in code reviews and provided technical guidance to junior developers.",
-      "Worked on a variety of projects, including a mobile app for tracking fitness goals, a productivity tool for managing tasks and reminders, and a game for iOS and macOS.",
     ],
   },
   {
