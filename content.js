@@ -59,12 +59,12 @@ const ARTIFACTS = [
   {
     n: 4,
     theme: "For Someone Else",
-    status: "progress", // "shipped", "progress", or "idea"
+    status: "shipped", // "shipped", "progress", or "idea"
     title: "Econ Impact Tracker",
     link: "https://github.com/bryanhuynh11/econ-impact-tracker",
     linkLabel: "Source on GitHub",
     reflection:
-      "I didn't find a partner this week, so I'm building this one on my own for now. I brainstormed with Claude through a Black Friday deal tracker, a few stock watchlist ideas, and a Vietnamese-language watchlist before picking an economic calendar impact tracker. It shows how NQ, ES, QQQ, and SPY moved after every CPI, jobs report, and Fed decision, so I can prep before the next one. I asked for Python and C++. Claude split the work so Python pulls release dates and prices, C++ measures the moves, and a plain web dashboard shows the patterns. The biggest snag was that the AI's environment couldn't reach Yahoo or FRED, so it built a sample-data generator and tested everything offline before I run the real fetch on my Mac. The big lesson was to verify the AI's work. When one C++ test failed, the test was what was wrong, not the engine, and a separate check on the outputs is what proved it. Next is getting a FRED key, loading real data, and showing it to another trader.",
+      "I couldn't find a partner, so I built this one solo: a tool that shows how NQ, ES, QQQ and SPY reacted to every CPI, jobs report and Fed decision, with a pre-release playbook, short lessons and a practice game for newer traders. Python pulls the data, C++ measures the moves, and a plain web page shows them. The biggest lessons were about verifying the AI's work: when the agent's environment couldn't download market data, it tested everything on sample data, and a failing C++ test turned out to be the test's mistake, not the engine's. What I didn't do well was the 'for someone else' part. I picked the idea before talking to a real user, so next I'm handing the CPI playbook to a trader friend before the Nov 11 release and logging their feedback.",
     tags: ["Python", "C++", "JavaScript", "FRED API", "yfinance"],
   },
   {
